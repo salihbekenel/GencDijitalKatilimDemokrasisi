@@ -25,7 +25,7 @@ Belediye kararlarına gençlerin dijital katılımını sağlayan interaktif bir
 
 1. Depoyu klonlayın:
 ```bash
-git clone https://github.com/kullaniciadiniz/GencDijitalKatilimDemokrasisi.git
+git clone https://github.com/salihbekenel/GencDijitalKatilimDemokrasisi.git
 
 
 
