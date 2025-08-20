@@ -3,246 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GençDijitalKatılımDemokrasisi</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-        }
-        .karar {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
-            background: #fff;
-        }
-        .karar-baslik {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        .karar-no {
-            font-size: 0.9em;
-            color: #7f8c8d;
-            margin-bottom: 5px;
-        }
-        .karar-ozet {
-            margin-bottom: 15px;
-            line-height: 1.5;
-        }
-        .oy-buttons {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-        .btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .btn-evet {
-            background-color: #27ae60;
-            color: white;
-        }
-        .btn-hayir {
-            background-color: #e74c3c;
-            color: white;
-        }
-        .btn:hover {
-            opacity: 0.9;
-        }
-        .istatistik {
-            background-color: #f8f9fa;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .istatistik-bar {
-            display: flex;
-            height: 25px;
-            margin: 5px 0;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        .evet-bar {
-            background-color: #27ae60;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-        }
-        .hayir-bar {
-            background-color: #e74c3c;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-        }
-        .sayfa-button {
-            margin: 20px 0;
-            text-align: center;
-        }
-    </style>
+    <title>GençDijitalKatılımDemokrasisi - Fikrim Gelecek Yarışması</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>GençDijitalKatılımDemokrasisi</h1>
-        <p>Belediye kararlarını oyla, fikrini söyle!</p>
+        <header>
+            <h1><i class="fas fa-vote-yea"></i> GençDijitalKatılımDemokrasisi</h1>
+            <p class="subtitle">Belediye kararlarını oyla, fikrini söyle, geleceğe yön ver!</p>
+        </header>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number" id="toplam-karar">5</div>
+                <div class="stat-label">Toplam Karar</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="toplam-oy">0</div>
+                <div class="stat-label">Toplam Oy</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="toplam-yorum">0</div>
+                <div class="stat-label">Toplam Yorum</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="katilim-orani">0%</div>
+                <div class="stat-label">Katılım Oranı</div>
+            </div>
+        </div>
+
+        <div class="filtreler">
+            <input type="text" id="arama-input" placeholder="Kararlarda ara..." class="arama-input">
+            <select id="sirala-select" class="sirala-select">
+                <option value="yeniden-eskiye">En yeniden eskiye</option>
+                <option value="eskiden-yeniye">En eskiden yeniye</option>
+                <option value="cok-oy-alan">Çok oy alandan aza</option>
+                <option value="az-oy-alan">Az oy alandan çoka</option>
+            </select>
+        </div>
 
         <div id="kararlar-container">
-            
+            <!-- Kararlar JavaScript ile buraya eklenecek -->
         </div>
 
         <div class="sayfa-button">
-            <button id="onceki-sayfa" onclick="oncekiSayfa()">← Önceki</button>
-            <span id="sayfa-bilgisi">Sayfa 1</span>
-            <button id="sonraki-sayfa" onclick="sonrakiSayfa()">Sonraki →</button>
+            <button class="btn btn-sayfa" id="onceki-sayfa" onclick="oncekiSayfa()">
+                <i class="fas fa-arrow-left"></i> Önceki
+            </button>
+            <span id="sayfa-bilgisi">Sayfa 1 / 3</span>
+            <button class="btn btn-sayfa" id="sonraki-sayfa" onclick="sonrakiSayfa()">
+                Sonraki <i class="fas fa-arrow-right"></i>
+            </button>
         </div>
+
+        <div class="proje-bilgi">
+            <h3><i class="fas fa-info-circle"></i> Proje Hakkında</h3>
+            <p>Bu proje, Fikrim Gelecek: Gençler Arası Dijital Çözümler Yarışması kapsamında geliştirilmiştir. 
+               Amacımız gençlerin yerel karar alma süreçlerine dijital katılımını sağlamaktır.</p>
+        </div>
+
+        <footer>
+            <p>© 2024 GençDijitalKatılımDemokrasisi - Fikrim Gelecek Yarışması | UNDP - TBB</p>
+            <div class="teknoloji-baglantilar">
+                <span>Teknolojiler: HTML5, CSS3, JavaScript</span>
+                <a href="https://github.com/kullaniciadiniz/GencDijitalKatilimDemokrasisi" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </footer>
     </div>
 
-    <script>
-        
-        const kararlar = [
-            {
-                id: 1,
-                kararNo: "2024/15",
-                baslik: "Küçükyalı Sahil Yolu Projesi: Araç Şeridi Yerine Bisiklet Yolu ve Yürüyüş Parkuru",
-                ozet: "Maltepe Belediyesi, Küçükyalı sahil yolundaki iki araç şeridini kaldırarak, yerine ayrılmış bisiklet yolu, yürüyüş parkuru ve dinlenme alanları yapmayı planlıyor. Amaç: trafik yoğunluğunu azaltmak, vatandaşlara sağlıklı yaşam alanı oluşturmak."
-            },
-            {
-                id: 2,
-                kararNo: "2024/22",
-                baslik: "\"MaltepeGençLAB\" Açılışı: Ücretsiz Kodlama ve Dijital Tasarım Atölyeleri",
-                ozet: "Belediye, Zübeyde Hanım Gençlik Merkezi'nde gençlere yönelik ücretsiz yazılım geliştirme (Python, Web Tasarım), 3B modelleme ve oyun geliştirme atölyeleri açma kararı aldı. Bütçe: 1.5 Milyon TL."
-            },
-            {
-                id: 3,
-                kararNo: "2024/18",
-                baslik: "Maltepe İlçesine Yeni Elektrikli Belediye Otobüsü Seferleri",
-                ozet: "Çevre kirliliğini azaltmak amacıyla, M5 hattına (Marmaray Bağlantı Yolu) entegre, 10 adet yeni elektrikli otobüs alınacak ve ücretsiz olarak hizmete sunulacak."
-            },
-            {
-                id: 4,
-                kararNo: "2024/09",
-                baslik: "Türkan Saylan Kültür Merkezi'nde Üniversiteli Gençlere %50 İndirim",
-                ozet: "Tiyatro, sinema gösterimi ve konser etkinliklerinde, 18-25 yaş aralığındaki üniversite öğrencilerine biletlerde %50 indirim uygulanması kararlaştırıldı."
-            },
-            {
-                id: 5,
-                kararNo: "2024/30",
-                baslik: "Cumartesi Günleri Araç Girişine Kapatılan \"Maltepe Sokakları\" Projesi",
-                ozet: "Her cumartesi 09:00-19:00 saatleri arasında, seçilecek 3 cadde araç trafiğine kapatılarak; vatandaşların yürüyüş, sokak oyunları ve açık hava etkinlikleri yapabileceği bir alana dönüştürülecek."
-            }
-        ];
-
-        let mevcutSayfa = 1;
-        const sayfaBasinaKarar = 2;
-
-      
-        document.addEventListener('DOMContentLoaded', function() {
-            kararlariYukle();
-            sayfaGoster();
-        });
-
-        function kararlariYukle() {
-            
-            kararlar.forEach(karar => {
-                if (!localStorage.getItem(`karar_${karar.id}`)) {
-                    localStorage.setItem(`karar_${karar.id}`, JSON.stringify({
-                        evet: 0,
-                        hayir: 0
-                    }));
-                }
-            });
-        }
-
-        function sayfaGoster() {
-            const container = document.getElementById('kararlar-container');
-            container.innerHTML = '';
-
-            const baslangic = (mevcutSayfa - 1) * sayfaBasinaKarar;
-            const bitis = baslangic + sayfaBasinaKarar;
-            const sayfaKararlari = kararlar.slice(baslangic, bitis);
-
-            sayfaKararlari.forEach(karar => {
-                const oyData = JSON.parse(localStorage.getItem(`karar_${karar.id}`));
-                const toplamOy = oyData.evet + oyData.hayir;
-                const evetYuzde = toplamOy > 0 ? (oyData.evet / toplamOy * 100).toFixed(1) : 0;
-                const hayirYuzde = toplamOy > 0 ? (oyData.hayir / toplamOy * 100).toFixed(1) : 0;
-
-                const kararHTML = `
-                    <div class="karar">
-                        <div class="karar-no">Karar No: ${karar.kararNo}</div>
-                        <div class="karar-baslik">${karar.baslik}</div>
-                        <div class="karar-ozet">${karar.ozet}</div>
-                        <div class="oy-buttons">
-                            <button class="btn btn-evet" onclick="oyVer(${karar.id}, 'evet')">✅ KATILIYORUM</button>
-                            <button class="btn btn-hayir" onclick="oyVer(${karar.id}, 'hayir')">❌ KATILMIYORUM</button>
-                        </div>
-                        <div class="istatistik">
-                            <strong>İstatistikler:</strong>
-                            <div class="istatistik-bar">
-                                <div class="evet-bar" style="width: ${evetYuzde}%">
-                                    ${evetYuzde}% EVET (${oyData.evet} oy)
-                                </div>
-                                <div class="hayir-bar" style="width: ${hayirYuzde}%">
-                                    ${hayirYuzde}% HAYIR (${oyData.hayir} oy)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                container.innerHTML += kararHTML;
-            });
-
-            document.getElementById('sayfa-bilgisi').textContent = `Sayfa ${mevcutSayfa}`;
-            document.getElementById('onceki-sayfa').disabled = mevcutSayfa === 1;
-            document.getElementById('sonraki-sayfa').disabled = mevcutSayfa === Math.ceil(kararlar.length / sayfaBasinaKarar);
-        }
-
-        function oyVer(kararId, oy) {
-            const oyData = JSON.parse(localStorage.getItem(`karar_${kararId}`));
-            oyData[oy]++;
-            localStorage.setItem(`karar_${kararId}`, JSON.stringify(oyData));
-            
-            alert(`Teşekkürler! ${kararId} numaralı karar için oyunuz kaydedildi.`);
-            sayfaGoster(); // İstatistikleri güncelle
-        }
-
-        function oncekiSayfa() {
-            if (mevcutSayfa > 1) {
-                mevcutSayfa--;
-                sayfaGoster();
-            }
-        }
-
-        function sonrakiSayfa() {
-            if (mevcutSayfa < Math.ceil(kararlar.length / sayfaBasinaKarar)) {
-                mevcutSayfa++;
-                sayfaGoster();
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
