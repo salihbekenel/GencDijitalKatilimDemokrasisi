@@ -1,9 +1,9 @@
 # GençDijitalKatılımDemokrasisi | Fikrim Gelecek Yarışması  
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/UNDP_logo.svg/800px-UNDP_logo.svg.png" alt="UNDP Türkiye" width="100"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/T%C3%BCrkiye_Belediyeler_Birli%C4%9Fi_logo.png" alt="TBB Destekli" width="120"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="AB Finansmanı" width="120"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/UNDP_logo.svg/800px-UNDP_logo.svg.png" alt="UNDP Türkiye"  height="80" width="100"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/T%C3%BCrkiye_Belediyeler_Birli%C4%9Fi_logo.png" alt="TBB Destekli"  height="80" width="120"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="AB Finansmanı"  height="80" width="120"/>
 </p>
 
 ## Proje Özeti  
