@@ -162,5 +162,3 @@ Bu proje, aşağıdaki kurum ve programların desteğiyle hayata geçirilmiştir
 - 🔗 LinkedIn: https://www.linkedin.com/in/salihbekenel/
 
 ⭐ Bu projeyi beğendiyseniz GitHub’da **star** vererek destek olabilirsiniz!  
-
-xdg-open index.html  # Linux
