@@ -12,9 +12,9 @@
 Bu proje, **Avrupa Birliği finansmanıyla**, **Birleşmiş Milletler Kalkınma Programı (UNDP)** ve **Türkiye Belediyeler Birliği (TBB)** iş birliğiyle yürütülen **"Bugünün Gençleri Geleceğin Meslekleri Projesi"** kapsamında, **"Fikrim Gelecek: Gençler Arası Dijital Çözümler Yarışması"** için geliştirilmiştir.  
 
 ### Özel Hedefler  
--  Yerel ve ulusal kararlara erişim kolaylığı sağlamak  
-- 🗳 Gençlerin karar süreçlerine dijital katılımını artırmak  
-- Veri odaklı politika analizi için altyapı oluşturmak  
+- Yerel ve ulusal kararlara erişim kolaylığı sağlamak  
+-  Gençlerin karar süreçlerine dijital katılımını artırmak  
+-  Veri odaklı politika analizi için altyapı oluşturmak  
 -  Dijital okuryazarlık ve vatandaşlık becerilerini geliştirmek  
 
 ---
@@ -72,6 +72,30 @@ open index.html    # macOS
 xdg-open index.html  # Linux
 
 
+---
+
+##  Katkıda Bulunma  
+
+1. Repo’yu fork edin  
+2. Feature branch oluşturun:  
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Değişiklikleri commit edin:  
+   ```bash
+   git commit -m "Add AmazingFeature"
+   ```
+4. Branch’i push edin:  
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. Pull Request oluşturun  
+
+Katkı alanları:  Hata düzeltmeleri,  Yeni özellikler,  Dokümantasyon,  Tasarım, Kod optimizasyonları  
+
+---
+
+
 
 ## Kullanım Kılavuzu  
 
@@ -103,36 +127,14 @@ xdg-open index.html  # Linux
 - Mobil uygulama geliştirme  
 - Açık veri API’si  
 
----
 
-##  Katkıda Bulunma  
-
-1. Repo’yu fork edin  
-2. Feature branch oluşturun:  
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. Değişiklikleri commit edin:  
-   ```bash
-   git commit -m "Add AmazingFeature"
-   ```
-4. Branch’i push edin:  
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. Pull Request oluşturun  
-
-Katkı alanları:  Hata düzeltmeleri,  Yeni özellikler,  Dokümantasyon,  Tasarım, Kod optimizasyonları  
-
----
-
-## 📝 Lisans  
+##  Lisans  
 
 Bu proje **MIT Lisansı** altında lisanslanmıştır.  
 
 
 
-## 👥 Ekip ve Katkıda Bulunanlar  
+## Ekip ve Katkıda Bulunanlar  
 
 **Proje Geliştiricisi**  
 - Salih Berke Ekenel – Baş Geliştirici
@@ -161,7 +163,4 @@ Bu proje, aşağıdaki kurum ve programların desteğiyle hayata geçirilmiştir
 
 ⭐ Bu projeyi beğendiyseniz GitHub’da **star** vererek destek olabilirsiniz!  
 
-
-
-open index.html    # macOS
 xdg-open index.html  # Linux
