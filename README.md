@@ -1,10 +1,10 @@
 # GençDijitalKatılımDemokrasisi | Fikrim Gelecek Yarışması  
 
-![UNDP Türkiye](https://img.shields.io/badge/UNDP-T%C3%BCrkiye-blue)  
-![TBB Destekli](https://img.shields.io/badge/TBB-Destekli-green)  
-![AB Finansmanı](https://img.shields.io/badge/AB-Finansman%C4%B1-%25230052cc)  
-![Durum](https://img.shields.io/badge/Durum-Aktif-brightgreen)  
-![Lisans](https://img.shields.io/badge/Lisans-MIT-success)  
+<p align="center">
+  <img src="https://www.undp.org/sites/g/files/zskgke326/files/2022-05/UNDP-Logo-Blue-Square.png" alt="UNDP Türkiye" width="100"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/T%C3%BCrkiye_Belediyeler_Birli%C4%9Fi_logo.png" alt="TBB Destekli" width="120"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="AB Finansmanı" width="120"/>
+</p>
 
 ## Proje Özeti  
 **GençDijitalKatılımDemokrasisi**, gençlerin yerel ve ulusal karar alma süreçlerine dijital katılımını sağlayan yenilikçi bir web platformudur.  
