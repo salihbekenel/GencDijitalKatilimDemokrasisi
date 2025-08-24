@@ -1,8 +1,8 @@
 # GençDijitalKatılımDemokrasisi | Fikrim Gelecek Yarışması  
 
 <p align="center">
-  <img src="https://www.undp.org/sites/g/files/zskgke326/files/2022-05/UNDP-Logo-Blue-Square.png" alt="UNDP Türkiye" width="100"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/T%C3%BCrkiye_Belediyeler_Birli%C4%9Fi_logo.png" alt="TBB Destekli" width="120"/>
+  <img src="https://www.undp.org/sites/g/files/zskgke326/files/2025-04/undp-logo-blue.4f32e17f.svg" alt="UNDP Türkiye" width="100"/>
+  <img src="[https://upload.wikimedia.org/wikipedia/commons/9/91/T%C3%BCrkiye_Belediyeler_Birli%C4%9Fi_logo.png](https://upload.wikimedia.org/wikipedia/commons/c/c5/T%C3%BCrkiye_Belediyeler_Birli%C4%9Fi_logo.png)" alt="TBB Destekli" width="120"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="AB Finansmanı" width="120"/>
 </p>
 
