@@ -137,8 +137,9 @@ Bu proje **MIT Lisansı** altında lisanslanmıştır.
 ## Ekip ve Katkıda Bulunanlar  
 
 **Proje Geliştiricisi**  
-- Salih Berke Ekenel – Baş Geliştirici
-- Uğurcan Çakar - Backend Geliştirici
+- Salih Berke Ekenel – Product Owner
+- Berşan Kılıç- Backend Geliştirici
+- Ömer Duymaz- Frontend Geliştirici
 
 **Destekleyen Kurumlar**  
 - UNDP Türkiye  
